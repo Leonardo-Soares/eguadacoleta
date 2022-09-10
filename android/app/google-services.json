@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "677491181559",
+    "project_id": "eguadacoleta",
+    "storage_bucket": "eguadacoleta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677491181559:android:3b2fe40511a1593fdf50f2",
+        "android_client_info": {
+          "package_name": "com.example.eguadacoleta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677491181559-hr6m0a31cuj25evl8dns2p18qj3072hi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsXsDeOEJ_L8C0vszfTfADGPnxSX1FABM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677491181559-hr6m0a31cuj25evl8dns2p18qj3072hi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
