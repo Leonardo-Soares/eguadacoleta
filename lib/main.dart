@@ -1,6 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
   runApp(MaterialApp(
     theme: ThemeData(primarySwatch: Colors.amber),
     initialRoute: "/login",
@@ -50,6 +55,9 @@ class _LoginPageState extends State<LoginPage> {
     if (response) {
       Navigator.pushNamed(context, "/home");
     }
+    else {
+      Navigator.pushNamed(context, "/login");
+    }
   }
 
   bool validate() {
@@ -68,7 +76,8 @@ class _LoginPageState extends State<LoginPage> {
 
   Future<bool> apiLogin(
       {required String email, required String password}) async {
-    await Future.delayed(const Duration(seconds: 3));
+     final response = await FirebaseAuth.instance.signInWithEmailAndPassword(email: email, password: password);
+     print(response);
     return true;
   }
 
